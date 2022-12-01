@@ -9,22 +9,21 @@ const puppeteer = require('puppeteer');
   //direciona pra url indicada
   await page.goto('https://app.feedz.com.br/');
   //digita o loguin
-  await page.type('.press-login', 'matheus.fantini@captei.com.br');
+  await page.type('.press-login', 'aqui você coloca seu email de acesso');
   //digita a senha
-  await page.type('#passInput', 'Mft291095');
+  await page.type('#passInput', 'aqui você coloca sua senha ');
   //aperta em logar
   await page.click('#enter-login');
   //escolhe o humor do dia
-  await page.click('.label.radio-inline');
-
-  
-
+  await page.select('.label.radio-inline');
+  //clica em confirmar
+  await page.click('.confirm.mood')
   //bate um screenshot da página
   await page.screenshot({ path: 'example.png' });
   //retorna "sucesso" caso não ocorra nenhum erro
   console.log('sucesso');
   //fecha o navegador
-  //await browser.close();
+  await browser.close();
 
 
 })();

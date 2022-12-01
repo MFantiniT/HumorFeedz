@@ -11,5 +11,14 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Cansado de entrar na feedz todo dia pra colocar meu humor do dia, automatizei isso.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MFantiniT/HumorFeedz.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/MFantiniT/HumorFeedz/issues"
+  },
+  "homepage": "https://github.com/MFantiniT/HumorFeedz#readme"
 }
